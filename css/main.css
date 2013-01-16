@@ -1,0 +1,19 @@
+body{
+    max-width:760px;
+    margin: 0 auto;
+
+    font-family: "Calibri", Helvetica, Arial, sans-serif;
+}
+h1, h2{
+    font-family: Georgia,"Times New Roman", Serif;
+}
+
+.logo-list li{
+    display:block;
+    float:left;
+    
+    width:20%;
+
+    list-style: none;
+
+}
