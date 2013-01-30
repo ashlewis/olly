@@ -1,10 +1,13 @@
 *{
     font-family: "Calibri", Helvetica, Arial, sans-serif;
-    font-size:18px;
+    font-size:14px;
     line-height:1.5em;
+    color:#444;
+    -webkit-text-size-adjust: 100%;
+    -ms-text-size-adjust: 100%;
 }
 body{
-    max-width:760px;
+
     margin: 0 auto;
     padding:2em;
 }
@@ -13,22 +16,26 @@ h1, h2{
 }
 
 h1{
+    padding:1em;
     font-size:3em;
-    float:left;
+    background:#444;
+    color:#fff;
 }
 
 h2{
     font-size:2em;
+    margin-bottom:0;
 }
 
+.headline{
+    text-align: center;
+}
 
 .profile-pic{
-    width:242px;
-    height:300px;
+    width:120px;
+    height:150px;
 
-    margin:20px;
-
-    float:right;
+    margin:0 auto;
 
     background-image: url('../images/olly.jpg');
     background-size: cover;
@@ -41,11 +48,9 @@ h2{
 
 
 .logo-list li{
-    display:block;
-    float:left;
-
-    height:50px;
-    width:20%;
+    float:right;
+    width:100%;
+    margin:20px 0;
 
     list-style: none;
     text-align: center;
@@ -67,41 +72,68 @@ h2{
     *zoom: 1;
 }
 
+a:focus {
+    outline: thin dotted;
+}
+
+a:active,
+a:hover {
+    outline: 0;
+}
+
+img {
+    border: 0;
+}
+
+@media screen and (min-width: 400px) {
+
+    .logo-list li{
+
+        width:50%;
+    }
+}
+
+
+@media screen and (min-width: 600px) {
+
+    *{
+        font-size:18px;
+    }
+
+    h1{
+        float:left;
+    }
+
+    .profile-pic{
+        width:242px;
+        height:300px;
+
+        margin:20px;
+
+
+    }
+
+    .logo-list li{
+
+        width:33%;
+    }
+
+    .headline{
+        text-align: left;
+    }
+}
+
 @media screen and (min-width: 760px) {
     *{
         font-size:24px;
     }
-}
 
-@media screen and (max-width: 600px) {
-
-    *{
-        font-size:14px;
-    }
-
-    h1{
-       float:none;
-    }
-
-    .profile-pic{
-        width:120px;
-        height:150px;
-        float:none;
-        margin:0 auto;
-
-    }
-
-    .profile-list{
-        float:none;
+    body{
+     max-width:760px;
     }
 
     .logo-list li{
-        float:none;
-        width:100%;
-    }
-
-    .headline{
-        text-align: center;
+        width:20%;
     }
 }
 
