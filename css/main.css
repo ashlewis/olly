@@ -1,56 +1,66 @@
+@import url(http://fonts.googleapis.com/css?family=Fjalla+One);
+
 *{
-    font-family: "Calibri", Helvetica, Arial, sans-serif;
+    font-family: Georgia,"Times New Roman", Serif;
     font-size:14px;
     line-height:1.5em;
     color:#444;
     -webkit-text-size-adjust: 100%;
     -ms-text-size-adjust: 100%;
 }
-body{
 
+body{
     margin: 0 auto;
     padding:2em;
 }
+
 h1, h2{
-    font-family: Georgia,"Times New Roman", Serif;
+    font-family: 'Fjalla One', "Calibri", Helvetica, Arial, sans-serif;
     margin:0;
 }
 
 h1{
-    padding:1em;
+    height:140px;
     margin-bottom:.5em;
-    font-size:2em;
+    padding:5px;
+
+    font-size:3em;
+    line-height:1em;
+    vertical-align: baseline;
     background:#444;
     color:#fff;
+
 }
 
 h2{
     font-size:2em;
-    margin:0;
+    margin:0 0 .5em 0;
+    border-bottom:1px solid;
 }
-
-.headline{
-    text-align: center;
-}
-
 
 .profile-list, .profile-list li{
     margin:0;
     padding:0;
 }
 
+.profile-list li{
+    margin-bottom:.5em;
+    list-style-type: square;
+}
+
 .social-list{
     margin:1em 0;
-    padding:0;
+    padding:1em 0;
 }
 
 .social-list li{
+
     list-style: none;
 }
 
 .logo-list{
     display:none;
-    border:1px solid #ccc;
+    border-top:1px solid;
     padding:0;
 }
 
@@ -95,29 +105,23 @@ img {
 
 @media screen and (min-width: 480px) {
 
-    h1{
-        float:left;
-    }
-    
     .logo-list{
         display:block;
     }
 
     .logo-list li{
-
         width:50%;
     }
 
     .logo-list li:last-of-type{
-
         width:100%;
     }
 
     .profile-pic{
-        width:120px;
+        float:right;
+        width:121px;
         height:150px;
-
-        margin:0 auto;
+        border-left:2em solid #fff;
 
         background-image: url('../images/olly.jpg');
         background-size: cover;
@@ -132,27 +136,20 @@ img {
     }
 
     h1{
-        float:left;
-        font-size:3em;
+        height:290px;
     }
 
     .profile-pic{
-        float:left;
-
         width:242px;
         height:300px;
-
-        margin:1.5em;
     }
 
     .logo-list li{
-
         width:33%;
     }
 
     .logo-list li:nth-child(4),
     .logo-list li:nth-child(5){
-
         width:50%;
     }
 
@@ -167,16 +164,18 @@ img {
     }
 
     body{
-     max-width:760px;
+        max-width:760px;
+    }
+
+    h1{
+       height:460px;
     }
 
     .profile-pic{
 
-
         width:300px;
         height:470px;
 
-        margin:1.5em;
     }
 
     .logo-list li,
