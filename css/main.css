@@ -49,33 +49,23 @@ h2{
 }
 
 .social-list{
+    padding:0;
     margin:1em 0;
-    padding:1em 0;
+    border-top:1px solid;
 }
 
 .social-list li{
-
+    margin:1em 0;
     list-style: none;
 }
 
-.logo-list{
+.social-list li a{
+    padding:10px 0;
+}
+
+
+.organizations{
     display:none;
-    border-top:1px solid;
-    padding:0;
-}
-
-.logo-list li{
-    float:right;
-    width:100%;
-    margin:1.5em 0;
-
-
-    list-style: none;
-    text-align: center;
-}
-
-.logo{
-    vertical-align:middle;
 }
 
 .cf:before,
@@ -88,6 +78,10 @@ h2{
 }
 .cf {
     *zoom: 1;
+}
+
+a{
+    color:#0579aa;
 }
 
 a:focus {
@@ -105,17 +99,39 @@ img {
 
 @media screen and (min-width: 480px) {
 
-    .logo-list{
+    .organizations{
         display:block;
+        margin:1.5em 0;
+        padding-top:1em;
+        border-top:1px solid;
+    }
+
+    .logo-list{
+        padding:0;
     }
 
     .logo-list li{
-        width:50%;
+        float:left;
+        width:20%;
+
+        list-style: none;
+        text-align: center;
     }
 
-    .logo-list li:last-of-type{
-        width:100%;
+    .logo{
+        display:block;
+        margin:0 auto;
     }
+
+    i{
+        background: url(../images/sprite.png) no-repeat top left;
+    }
+
+    .sprite-alcon{ background-position: 0 0; width: 60px; height: 15px; }
+    .sprite-bam{ background-position: 0 -144px; width: 31px; height: 25px; }
+    .sprite-dhl{ background-position: 0 -319px; width: 43px; height: 25px; }
+    .sprite-hp{ background-position: 0 -494px; width: 25px; height: 25px; }
+    .sprite-sea-world{ background-position: 0 -669px; width: 72px; height: 25px; }
 
     .profile-pic{
         float:right;
@@ -126,6 +142,9 @@ img {
         background-image: url('../images/olly.jpg');
         background-size: cover;
     }
+
+
+
 }
 
 
@@ -144,18 +163,15 @@ img {
         height:300px;
     }
 
-    .logo-list li{
-        width:33%;
-    }
-
-    .logo-list li:nth-child(4),
-    .logo-list li:nth-child(5){
-        width:50%;
-    }
-
     .headline{
         text-align: left;
     }
+
+    .sprite-alcon{ background-position: 0 -65px; width: 120px; height: 29px; }
+    .sprite-bam{ background-position: 0 -219px; width: 61px; height: 50px; }
+    .sprite-dhl{ background-position: 0 -394px; width: 86px; height: 50px; }
+    .sprite-hp{ background-position: 0 -569px; width: 50px; height: 50px; }
+    .sprite-sea-world{ background-position: 0 -744px; width: 143px; height: 50px; }
 }
 
 @media screen and (min-width: 760px) {
@@ -178,11 +194,16 @@ img {
 
     }
 
-    .logo-list li,
-    .logo-list li:nth-child(4),
-    .logo-list li:nth-child(5),
-    .logo-list li:last-of-type{
-        width:20%;
+}
+
+@media screen and (min-width: 800px) {
+    .social-list li{
+        float:left;
     }
+
+    .social-list li:last-of-type{
+        float:right;
+    }
+
 }
 
