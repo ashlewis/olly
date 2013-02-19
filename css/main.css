@@ -197,11 +197,11 @@ img {
 }
 
 @media screen and (min-width: 800px) {
-    .social-list li{
+    li.email{
         float:left;
     }
 
-    .social-list li:last-of-type{
+    li.linkedin{
         float:right;
     }
 
