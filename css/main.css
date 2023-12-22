@@ -20,6 +20,10 @@ h1, h2, .headline p {
     margin:0;
 }
 
+p:not([class]) {
+    text-align: justify;
+}
+
 .headline {
     height:150px;
     background:#444;
